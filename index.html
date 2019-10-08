@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lattitude X</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="margin-top-40" >
+    <nav class="navbar navbar-expand-lg navbar navbar-light fixed-top"  style="background-color: #e3fafd;">
+        <a class="navbar-brand" href="index.html">LattitudeX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav mr-auto ml-1" style="width: 100px;"> -->
+          <ul class="navbar-nav mr-auto">
+    
+             
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="visualizations/max_temperature.html">Max Temperature</a>
+                <div class="dropdown-divider"></div>
+    
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="visualizations/humidity.html">Hummidity</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="visualizations/wind_speed.html">Windiness</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link"  href="visualizations/comparison.html">Comparison<span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="visualizations/data.html">Data</a>
+                  </li>
+
+        </div>
+</nav>
+
+  <div class="container-fluid">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-8">
+
+                    <h1 class="display-5" >Lattitude vs. X</h1>
+                    <hr>
+                    <!-- float:left;clear:both; style="float:right;clear:both" -->
+                    <p style="font-size:18px"><img src="Images/TemperatureOverLattitude.png" alt="LattitudeTemps" style="float:left;clear:both;width:65%;margin-right:15px;"> 
+                        The project purpose was to analyse the weather conditions across cities at various random lattitudes across the earth, 
+                        and make observations based on the insights the data provides. 
+                        To accomplish this analysis, we pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br>
+                    </p>
+                    <p style="font-size:18px;float:right;clear:both">
+                        After cleaning and assembling the dataset, we used MatPlotLib to plot various aspects 
+                        of the weather vs. lattitude.  Factors analysed included:
+                        <ul style="list-style-type:none;font-size:16px;float:left;clear:both">
+                            <li>temperature</li>
+                            <li>cloudiness</li>
+                            <li>wind speed</li>
+                            <li>hummidity</li>
+                        </ul>
+                    <p style="font-size:18px;float:right;clear:both">
+
+                        This site provides the source data and visualizations created as part of the analyisis, 
+                        as well as explanations of some trends and correlations found.
+                    </p>
+
+                    </p>
+                    <!-- <hr class="my-4">
+                    <p>Here we can display some more text!</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+            </div>
+                <div class="col-md-4">
+        <div class="box-dot">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Visualizations</h2>
+            <hr>
+                </div>
+        </div>
+        <div class="row"  style="padding-top: 10%;padding-bottom: 20%">
+            <div class="col-md-6">
+                   <a href="visualizations/max_temperature.html"><img src="Images/TemperatureOverLattitude.png" alt="TempLats" class="img-thumbnail" style="float:left;clear:both;width:150px">
+                   </a>
+                  <div class="caption"><h3 class="text-center">temperature</h3></div>
+
+            </div>
+            <div class="col-md-6">
+
+                    <a href="visualizations/cloudiness.html"><img src="Images/CloudinessOverLattitude.png" alt="CloudyLats" class="img-thumbnail" style="float:left;clear:both;width:150px">
+                    </a>
+                    <div class="caption"><h3 class="text-center">cloudiness</h3></div>
+            
+            </div>
+        </div>
+        
+        <div class="row">
+                <div class="col-md-6">
+                    <a href="visualizations/humidity.html"><img src="Images/HumidityOverLattitude.png" alt="HumidLats" class="img-thumbnail" style="float:left;clear:both;width:150px">
+                    </a>
+                    <div class="caption"><h3 class="text-center">humidity</h3></div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="visualizations/wind_speed.html"><img src="Images/WindinessOverLattitude.png" alt="WindyLats" class="img-thumbnail" style="float:left;clear:both;width:150px">
+                  </a>
+                  <div class="caption"><h3 class="text-center">windiness</h3></div>
+
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+</div>
+
+<div class="container">
+  <h3 class="text-center">Thumbnails</h3>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" 
+                role="button">Button</a></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+            </div>
+          <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+    </div>
+
+  <div class="row">
+    <div class="col">
+        <h3 class="text-center">List Groups</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">10</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">4</span>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Cards</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Nav Tabs</h3>
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Nav Pills</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Alerts</h3>
+        <div class="alert alert-primary" role="alert">
+            Info Alert
+          </div>
+          <div class="alert alert-success" role="alert">
+            Success Alert
+          </div>
+          <div class="alert alert-danger" role="alert">
+            Danger Alert
+          </div>
+          <div class="alert alert-warning" role="alert">
+            Warning Alert
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Progress Bar</h3>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <h3 class="text-center">Buttons</h3>
+    <div class="row">
+
+      <button type="button" class="btn btn-default">Default Button</button>
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-danger">Danger Button</button>
+      <button type="button" class="btn btn-info">Info Button</button>
+      <button type="button" class="btn btn-warning">Warning Button</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
