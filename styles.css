@@ -87,7 +87,9 @@ h4 {
   padding: 10px;
   background: #5191fd;
 }
-
+.dropdown-backdrop {
+  z-index: -1 !important;
+}
 
 /* Making our navbar li's inline-block elements this makes it so we can have 
 multiple on the same line. Floats could have been used too */
