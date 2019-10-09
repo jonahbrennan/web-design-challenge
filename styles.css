@@ -26,6 +26,13 @@ h4 {
   text-shadow: 12px 0px 12px white ;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .box {
   width: 100%;
   padding: 10px;
@@ -135,7 +142,7 @@ multiple on the same line. Floats could have been used too */
 }
 
 /* Here we define some styles that will ONLY be applied at screen sizes below 480 pixels */
-@media (max-width: 890px) {
+@media (max-width: 920px) {
   /* .navbar li {
 
     padding: 3px;
@@ -145,6 +152,18 @@ multiple on the same line. Floats could have been used too */
     margin-top: 5px;
     margin-right: 1px;
     margin-left: 1px;
+  }
+  .dataframe {
+    /* margin-top: 2px; */
+    font-size: 12px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgb(156, 156, 156);
+    
+  }
+  th {
+    font-size:15px;
   }
 }
 @media (max-width: 660px) {
@@ -168,5 +187,21 @@ multiple on the same line. Floats could have been used too */
     border-color: rgb(63, 0, 59);
     border-style: dotted; */
   }
+  .dataframe {
+    /* margin-top: 2px; */
+    font-size: 9px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgb(156, 156, 156);
+    
+  }
 
+  /* tr style="font-size:18px;text-align: center;color: azure;text-shadow: 2px 2px 6px #7fb3b0;" */
+  .tr {
+    font-size:10px;
+  }
+  th {
+    font-size:11px;
+  }
 }
