@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cloudiness X</title>
+  <title>GMap X</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -56,15 +56,29 @@
         <div class="row">
             <div class="col-md-8">
 
-                    <h1 class="display-5">Summary: Cloudiness Over Lattitude</h1>
+                    <h1 class="display-5">Summary: Temperature GMap</h1>
                     <hr>
                     <!-- float:left;clear:both; style="float:right;clear:both" -->
-                    <p><img src="../Images/CloudinessOverLattitude.png" alt="LattitudeTemps" style="float:left;clear:both;width:100%;margin-right:15px;"> 
+                    <p><img src="../Images/Temperature_OverWatch.png" alt="Temperature_OverWatch" style="float:left;clear:both;width:100%;margin-right:15px;"> 
                         <br>
                     </p>
                     <p style="float:right;clear:both">
-                        This graphic shows the Cloudiness of cities closer to the Earth's Equator. 
+                        This google maps graphic pinpoints temperatures from cities across the planet. 
+                        Color represents range of temp from red hot to blue cold.
 
+                    </p>
+                    <p><img src="../Images/TempOverWatch_SatViewB.png" alt="Temperature_OverWatch" style="float:left;clear:both;width:100%;margin-right:15px;"> 
+                        <br>
+                        Gmaps and MatPlotLib was used to generate an interactive map display temperature and city 
+                        name in an info box displayed when the user clicks a data point. 
+                    </p>
+                    <p><img src="../Images/TempOverWatch_SatView.png" alt="Temperature_OverWatch" style="float:left;clear:both;width:100%;margin-right:15px;"> 
+                        <br>
+                        Java scripts were used to access GOES and Himawari Satellite images given the user a 
+                        24 hour loop of the hemisphere the city is located.
+                        <br>
+
+                        <img src="../Images/TempOverWatch_SatViewA.png" alt="Temperature_OverWatch" style="float:left;clear:both;width:100%;margin-right:15px;">
                     </p>
                     <!-- <hr class="my-4">
                     <p>Here we can display some more text!</p>
@@ -109,13 +123,13 @@
                     </div>
             </div>
             <div class="row"  style="padding-top: 10%;padding-bottom: 20%">
-                <div class="col-md-12">
-                    <a href="temperature_gmaps.html"><img src="../Images/Temperature_Overwatch.png" alt="MapLats" class="img-thumbnail" style="float:none;clear:both;width:150px">
-                    </a>
-                    <div class="caption"><h3 class="text-center">temp_map</h3></div>
-            <hr>
-                </div>
-        </div>
+                    <div class="col-md-12">
+                        <a href="temperature_gmaps.html"><img src="../Images/Temperature_Overwatch.png" alt="MapLats" class="img-thumbnail" style="float:none;clear:both;width:150px">
+                        </a>
+                        <div class="caption"><h3 class="text-center">temp_map</h3></div>
+                <hr>
+                    </div>
+            </div>
         </div>
   </div>
 </div>
