@@ -80,6 +80,9 @@ img {
 .margin-top-40 {
   margin-top: 40px;
 }
+.margin-top-30 {
+  margin-top: 30px;
+}
 
 .jumbotron {
   /* box-shadow: 5px 10px 40px  #5adfd6;
@@ -101,11 +104,13 @@ multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
   padding: 10px;
-  margin-right: 1px;
-  margin-left: 1px;
+  /* margin-right: 1px;
+  margin-left: 1px; */
   cursor: pointer;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
+
+
 }
 
 /* Getting rid of the default link styles here */
